@@ -98,15 +98,15 @@
       <div>
         <span class="eyebrow"><span class="dot"></span><span class="label" style="color:var(--primary);">ISO 13485:2016 &amp; CE Certified</span></span>
         <h1 class="h1">Precision engineered<br>for <span class="accent">zero-defect</span><br>sterile manufacturing.</h1>
-        <p class="lede">Incorporated in 2006, Dispoline India manufactures single-use sterile surgical disposables — customised procedure kits, gowns, drapes and PPE — with validated sterilization and a certified Quality Management System for Medical Devices.</p>
+        <p class="lede">Dispoline India designs and manufactures surgical disposables — kits, gowns, drapes and PPE — in Class 100,000 cleanrooms, built for hospitals that cannot afford to compromise.</p>
         <div class="hero-cta">
           <button class="btn btn-primary" onclick="navigate('products')">Browse Product Catalog <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></button>
           <button class="btn btn-secondary" onclick="navigate('certificates')">View Certifications</button>
         </div>
         <div class="hero-stats">
-          <div class="hero-stat"><b><span data-counter="20" data-suffix="+">0+</span></b><span>Years Manufacturing</span></div>
-          <div class="hero-stat"><b><span data-counter="8" data-suffix="+">0+</span></b><span>Product Categories</span></div>
-          <div class="hero-stat"><b><span data-counter="100" data-suffix="%">0%</span></b><span>Sterilization Validated</span></div>
+          <div class="hero-stat"><b><span data-counter="12" data-suffix="+">0+</span></b><span>Years Manufacturing</span></div>
+          <div class="hero-stat"><b><span data-counter="40" data-suffix="M+">0M+</span></b><span>Units Shipped / Year</span></div>
+          <div class="hero-stat"><b><span data-counter="99.4" data-suffix="%">0%</span></b><span>Batch Pass Rate</span></div>
         </div>
       </div>
       <div class="hero-visual">
@@ -121,8 +121,8 @@
 
   <div class="marquee-wrap">
     <div class="marquee">
-      <span>QMS FOR MEDICAL DEVICES</span><span>ISO 11135 VALIDATED STERILIZATION</span><span>EN ISO 11607-2 PACKAGING</span><span>ETO STERILIZED</span><span>CYTOTOXICITY TESTED</span><span>BIO-BURDEN ANALYSIS</span><span>FULL TRACEABILITY PROTOCOLS</span><span>DERMAL IRRITATION TESTED</span>
-      <span>QMS FOR MEDICAL DEVICES</span><span>ISO 11135 VALIDATED STERILIZATION</span><span>EN ISO 11607-2 PACKAGING</span><span>ETO STERILIZED</span><span>CYTOTOXICITY TESTED</span><span>BIO-BURDEN ANALYSIS</span><span>FULL TRACEABILITY PROTOCOLS</span><span>DERMAL IRRITATION TESTED</span>
+      <span>ISO 13485:2016</span><span>CE MARKED</span><span>WHO-GMP APPROVED</span><span>AAMI LEVEL 3/4</span><span>EO &amp; GAMMA STERILIZED</span><span>ISO 7 CLEANROOM</span>
+      <span>ISO 13485:2016</span><span>CE MARKED</span><span>WHO-GMP APPROVED</span><span>AAMI LEVEL 3/4</span><span>EO &amp; GAMMA STERILIZED</span><span>ISO 7 CLEANROOM</span>
     </div>
   </div>
 
@@ -235,22 +235,22 @@
   <section class="section-tight wrap" data-reveal>
     <span class="label">Corporate Profile</span>
     <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">About Dispoline India</h1>
-    <p style="color:var(--secondary);max-width:70ch;font-size:16px;line-height:1.7;">Incorporated in 2006, Dispoline India Private Limited is a Bangalore-based manufacturer of sterile, single-use medical disposables. For over 20 years we have served hospitals, surgery centres and government health programmes with customised procedure kits, surgical gowns, drapes and PPE — all manufactured under a certified Quality Management System and validated sterilization process.</p>
+    <p style="color:var(--secondary);max-width:70ch;font-size:16px;line-height:1.7;">For over a decade, Dispoline India has manufactured sterile, single-use medical disposables from our ISO 13485-certified facility. We serve tertiary hospitals, ambulatory surgery centers and government health missions across India and 20+ export markets, engineering every product to a zero-defect standard.</p>
   </section>
   <section class="wrap" style="padding-bottom:80px;">
     <div class="grid-auto" data-reveal-stagger>
-      <div class="stat-block card" style="padding:28px;"><b><span data-counter="20" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Years of Operation</span></div>
-      <div class="stat-block card" style="padding:28px;"><b><span data-counter="8" data-suffix="">0</span></b><span class="label" style="margin-top:6px;display:block;">Product Categories</span></div>
-      <div class="stat-block card" style="padding:28px;"><b><span data-counter="30" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Surgery Specialties Served</span></div>
-      <div class="stat-block card" style="padding:28px;"><b><span data-counter="3" data-suffix=" Certs">0</span></b><span class="label" style="margin-top:6px;display:block;">International Certifications</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="12" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Years of Operation</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="450" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Employees</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="20" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Export Markets</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="99.4" data-suffix="%">0</span></b><span class="label" style="margin-top:6px;display:block;">Batch Pass Rate</span></div>
     </div>
   </section>
   <section class="section" style="background:var(--surface-container-lowest);border-top:1px solid var(--outline-variant);">
     <div class="wrap" style="display:grid;gap:40px;" >
       <div data-reveal>
         <span class="label">Our Mission</span>
-        <h2 style="font-size:24px;font-weight:800;color:var(--primary);margin:10px 0 14px;">Delivering quality healthcare disposables that create value.</h2>
-        <p style="color:var(--secondary);line-height:1.7;max-width:70ch;">Our mission is to provide the healthcare industry with quality disposables that are cost-effective, increase safety and aid productivity. We seek to be the market leader in healthcare disposables by developing products that provide superior value — through innovation and execution that is customer driven. We integrate our broad resources to deliver innovative clinical solutions, creating greater value for our customers through continuous education programmes conducted by field experts.</p>
+        <h2 style="font-size:24px;font-weight:800;color:var(--primary);margin:10px 0 14px;">Form follows function — always.</h2>
+        <p style="color:var(--secondary);line-height:1.7;max-width:70ch;">We design for the operating theatre first: sequential unpacking, fail-safe sterility indicators, and materials chosen for clinical performance, not cosmetics. Every facility decision — from cleanroom class to batch traceability — is made to protect the patient outcome at the end of the supply chain.</p>
       </div>
       <div class="step" data-reveal>
         <div class="num">01</div>
@@ -280,12 +280,12 @@
   </section>
   <section class="wrap" style="padding-bottom:100px;">
     <div class="grid-auto" data-reveal-stagger>
-      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">shield</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Infection Prevention &amp; Patient Safety</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Single-use sterile products eliminate cross-contamination risk and protect both patient and surgical team from healthcare-associated infections.</p></div>
-      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">savings</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Reduced Cost &amp; Time Saving</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Customised procedure kits eliminate the time and cost of assembling individual items. Faster theatre turnaround and reduced nursing preparation time.</p></div>
-      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">inventory</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Simplified Inventory &amp; Lower Capital Binding</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Bundled kits reduce SKU count, storage requirements and capital tied up in loose stock. Fewer purchase orders, less administration.</p></div>
-      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">bolt</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Faster Reaction Time in Emergencies</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Ready-to-use pre-sterile packs mean critical procedures can begin immediately — no time lost assembling or searching for individual components.</p></div>
-      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">qr_code_scanner</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Full Traceability Protocols</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Batch and run-wise monitoring of all critical quality parameters, with complete traceability from raw material sourcing through to hospital dispatch.</p></div>
-      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">tune</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Customised to Your Procedures</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Kits are configured to the exact requirements of your surgical team and procedures — not generic off-the-shelf packs. Contact us to discuss your specification.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">shield</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Reduced Infection Risk</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">High-barrier materials and validated sterilization cut surgical site infection exposure.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">bolt</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Faster Theatre Turnover</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Sequential-unpack kits reduce setup time between procedures by up to 30%.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">savings</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Lower Total Cost</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Bundled kits reduce wastage and inventory overhead versus loose-item procurement.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">qr_code_scanner</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Full Traceability</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Every unit is barcode-tracked from raw material lot to hospital dispatch.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">eco</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Latex-Free Options</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Full latex-free product lines available across gowns, drapes and gloves.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">support_agent</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Dedicated Support</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Technical account managers for bulk procurement and custom kit configuration.</p></div>
     </div>
   </section>
 </section>
@@ -306,15 +306,12 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Quality Management System for Medical Devices</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Validated Sterilization as per ISO 11135</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Validated Packaging Sealing (EN ISO 11607-2)</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Medical Fabrics Sourced Globally</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Batch/Run-Wise Monitoring of Critical QC Parameters</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Cytotoxicity &amp; Dermal Irritation Testing</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Regular Bio-Burden &amp; ETO Residual Tests</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
-        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Usage-Based Sealing Methods</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
-        <tr><td style="padding:16px 12px;font-size:14px;">Full Traceability Protocols</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">ISO 13485:2016 Certified</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Class 100,000 Cleanroom</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Batch-Level Traceability</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Custom Kit Configuration</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Pan-India Cold Chain Logistics</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
+        <tr><td style="padding:16px 12px;font-size:14px;">Dedicated Technical Account Manager</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
       </tbody>
     </table>
   </section>
@@ -331,37 +328,34 @@
     <div class="grid-auto" data-reveal-stagger>
       <div class="card" style="padding:28px;text-align:center;">
         <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">workspace_premium</span>
-        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">Quality Management System</h3>
-        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">For Medical Devices — full QMS certification covering design, manufacture and post-market surveillance.</p>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 13485:2016</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Medical Devices — Quality Management Systems</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">verified</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">CE Marking</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">European Conformity — Class I/IIa Devices</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">public</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">WHO-GMP</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Good Manufacturing Practice Certification</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">gpp_good</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">CDSCO Registered</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Central Drugs Standard Control Organisation</p>
       </div>
       <div class="card" style="padding:28px;text-align:center;">
         <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">science</span>
-        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 11135 Sterilization</h3>
-        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Validated ETO sterilization process for medical devices — every batch tested before release.</p>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 7 Cleanroom</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Controlled Environment Assembly Certification</p>
       </div>
       <div class="card" style="padding:28px;text-align:center;">
-        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">inventory_2</span>
-        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">EN ISO 11607-2 Packaging</h3>
-        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Validated sterile barrier packaging sealing — ensuring sterility is maintained until point of use.</p>
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">eco</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 14001</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Environmental Management Systems</p>
       </div>
-      <div class="card" style="padding:28px;text-align:center;">
-        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">biotech</span>
-        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">Cytotoxicity &amp; Dermal Tests</h3>
-        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Independent cytotoxicity and skin (dermal irritation) testing performed on all materials.</p>
-      </div>
-      <div class="card" style="padding:28px;text-align:center;">
-        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">troubleshoot</span>
-        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">Bio-Burden &amp; Sterility Tests</h3>
-        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Regular bio-burden analysis, sterility tests and ETO residual tests on every production run.</p>
-      </div>
-      <div class="card" style="padding:28px;text-align:center;">
-        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">qr_code_scanner</span>
-        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">Full Traceability Protocols</h3>
-        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Batch/run-wise monitoring of critical quality parameters with complete traceability from raw material to dispatch.</p>
-      </div>
-    </div>
-    <div style="margin-top:48px;padding:28px;background:var(--surface-container-lowest);border:1px solid var(--outline-variant);border-radius:12px;" data-reveal>
-      <p style="color:var(--secondary);font-size:14px;line-height:1.7;margin:0;"><span style="color:var(--primary);font-weight:600;">Note on certificate downloads:</span> Copies of our certification documents are available on request. Contact our technical sales team at <a href="mailto:info@dispoline.in" style="color:var(--accent);">info@dispoline.in</a> or call <a href="tel:+918041202090" style="color:var(--accent);">+91-80-4120 2090</a> and we will supply the relevant certificates for your procurement process.</p>
     </div>
   </section>
 </section>
@@ -373,10 +367,6 @@
       <span class="label">Get In Touch</span>
       <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">Contact Our Technical Sales Team</h1>
       <p style="color:var(--secondary);max-width:60ch;font-size:16px;line-height:1.7;">For bulk procurement, custom kit configuration or technical data sheets, reach out and our team will respond within one business day.</p>
-      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:20px;">
-        <a href="http://www.dispoline.in/e-Brochure/company.pdf" target="_blank" class="btn btn-secondary" style="display:inline-flex;align-items:center;gap:8px;"><span class="material-symbols-outlined" style="font-size:16px;">download</span>Company Brochure (PDF)</a>
-        <a href="http://www.dispoline.in/e-Brochure/prev-wrap.pdf" target="_blank" class="btn btn-secondary" style="display:inline-flex;align-items:center;gap:8px;"><span class="material-symbols-outlined" style="font-size:16px;">download</span>Prev-Wrap Brochure (PDF)</a>
-      </div>
     </div>
     <div style="display:grid;gap:40px;grid-template-columns:1fr;" class="grid-2col-r">
       <form data-reveal onsubmit="handleContactForm(event)" style="display:flex;flex-direction:column;gap:18px;">
@@ -392,10 +382,10 @@
         <button type="submit" class="btn btn-primary" style="align-self:start;">Send Enquiry <span class="material-symbols-outlined" style="font-size:16px;">send</span></button>
       </form>
       <div data-reveal style="display:flex;flex-direction:column;gap:16px;">
-        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">location_on</span><div><b style="font-size:13px;color:var(--primary);">Head Office &amp; Works</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);"># 62, 63, 68, 69, 1st Cross, Muniswamappa Layout, Off Hosur Road, Bommanahalli, Bangalore – 560 068</p></div></div>
-        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">call</span><div><b style="font-size:13px;color:var(--primary);">Phone</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);"><a href="tel:+918041202090" style="color:inherit;">+91-80-4120 2090</a> &nbsp;/&nbsp; <a href="tel:+918041202091" style="color:inherit;">+91-80-4120 2091</a></p></div></div>
-        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">phone_android</span><div><b style="font-size:13px;color:var(--primary);">Mobile / WhatsApp</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);"><a href="tel:+918088031446" style="color:inherit;">+91 80880 31446</a></p></div></div>
-        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">mail</span><div><b style="font-size:13px;color:var(--primary);">Email</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);"><a href="mailto:info@dispoline.in" style="color:inherit;">info@dispoline.in</a></p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">location_on</span><div><b style="font-size:13px;color:var(--primary);">Manufacturing Facility</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">MIDC Industrial Area, Pune, Maharashtra, India 411019</p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">call</span><div><b style="font-size:13px;color:var(--primary);">Sales Hotline</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">+91 20 6789 4500</p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">mail</span><div><b style="font-size:13px;color:var(--primary);">Email</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">sales@dispolineindia.com</p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">schedule</span><div><b style="font-size:13px;color:var(--primary);">Business Hours</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">Mon – Sat, 9:00 AM – 6:30 PM IST</p></div></div>
       </div>
     </div>
   </section>
@@ -457,11 +447,11 @@
     <div class="footer-grid">
       <div style="display:flex;flex-direction:column;gap:14px;">
         <span class="footer-brand">DISPOLINE INDIA</span>
-        <p style="font-size:13px;color:#9aa0a8;max-width:34ch;line-height:1.6;">Manufacturer of sterile single-use surgical disposables. Validated sterilization &amp; certified Quality Management System for Medical Devices. Est. 2006, Bangalore.</p>
+        <p style="font-size:13px;color:#9aa0a8;max-width:34ch;line-height:1.6;">ISO 13485:2016 &amp; CE certified manufacturer of sterile surgical disposables.</p>
         <div style="display:flex;gap:10px;margin-top:6px;">
-          <a href="https://www.facebook.com/Dispoline-120818384777899" target="_blank" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">public</span></a>
-          <a href="mailto:info@dispoline.in" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">mail</span></a>
-          <a href="tel:+918041202090" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">call</span></a>
+          <a href="#" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">public</span></a>
+          <a href="#" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">mail</span></a>
+          <a href="#" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">call</span></a>
         </div>
       </div>
       <div>
