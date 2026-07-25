@@ -84,7 +84,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 650,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2025/6/518325719/DI/TM/KU/2930693/reinforced-surgical-gown-500x500.jpg",
     tags: ["SMS Fabric", "SMMS", "Barrier Gown"],
     desc: "Sterile surgical gown in SMS and SMMS non-woven fabric. Available in standard and reinforced versions with ultrasonically sealed critical zones for enhanced fluid resistance.",
     specs: { "Fabric": "SMS / SMMS Non-woven", "Variants": "Standard / Reinforced", "Type": "Single-Use Sterile" }
@@ -96,7 +96,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 1400,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2023/5/308334838/ZE/LI/PC/2930693/breathable-viral-barrier-gown-500x500.jpg",
     tags: ["Viral Barrier", "BVB", "High-Risk"],
     desc: "Breathable Viral Barrier gown engineered for high-fluid and high-risk procedures. SMS with alcohol repellent and anti-static treatment, plus full viral penetration resistance.",
     specs: { "Fabric": "SMS — Alcohol Repellent, Anti-Static", "Barrier": "Breathable Viral Barrier", "Type": "Single-Use Sterile" }
@@ -110,7 +110,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 1800,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1622253694238-3b22139576c1?w=600&q=80",
+    img: "https://5.imimg.com/data5/IOS/Default/2024/5/419333683/VX/JD/GI/2930693/product-jpeg-500x500.png",
     tags: ["Patient Drape", "Fenestrated", "Sterile"],
     desc: "Sterile individual patient drapes with fenestrated design and medical-grade adhesive perimeter. Available across all surgical specialties — Cardiology, Urology, Ophthalmology and more.",
     specs: { "Type": "Fenestrated / Impervious", "Material": "Non-woven Laminate", "Latex": "Free" }
@@ -122,7 +122,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 1200,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1578496781985-452d4a934d50?w=600&q=80",
+    img: "https://5.imimg.com/data5/IOS/Default/2024/5/419815418/KD/KH/JP/2930693/product-jpeg-500x500.png",
     tags: ["OT Table", "Instrument Cover", "Sterile"],
     desc: "Single-use sterile covers for surgical instruments and OT tables. Maintains sterile field integrity for the full duration of the procedure.",
     specs: { "Type": "Cover / Wrap", "Material": "Non-woven", "Sterilization": "ETO Validated" }
@@ -136,7 +136,7 @@ const PRODUCTS = [
     subcategory: "Wraps and Sterile Fields",
     price: 950,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1576671081837-49000212a370?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/3/396418229/KX/AU/QA/2930693/sterile-barrier-systems-500x500.jpg",
     tags: ["SMS Wrap", "Sterile Field", "Non-woven"],
     desc: "SMS non-woven sterile barrier wrap and sterile field system. Also available in Crepe and Non-woven variants. Validated sealing as per EN ISO 11607-2.",
     specs: { "Material": "SMS / Crepe / Non-woven", "Standard": "EN ISO 11607-2", "Type": "Wrap / Field" }
@@ -150,7 +150,7 @@ const PRODUCTS = [
     subcategory: "Masks",
     price: 75,
     unit: "box of 50",
-    img: "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/3/396676327/IU/SF/IU/2930693/3-ply-face-mask-10-pcs-product-images-o491802915-p491802915-0-202203170552-500x500.jpg",
     tags: ["1 PLY", "2 PLY", "3 PLY", "Tie / Elastic"],
     desc: "Disposable surgical masks in 1-ply, 2-ply and 3-ply configurations. Available with tie or elastic fastening. Manufactured to infection prevention standards.",
     specs: { "Layers": "1 PLY / 2 PLY / 3 PLY", "Fastening": "Tie or Elastic", "Type": "Single-Use" }
@@ -162,7 +162,7 @@ const PRODUCTS = [
     subcategory: "Caps",
     price: 90,
     unit: "pack of 100",
-    img: "https://images.unsplash.com/photo-1614608682850-e0d6ed316d47?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/2/390321928/LX/PO/GS/2930693/disposable-surgical-cap-500x500.jpg",
     tags: ["Bouffant", "Surgeon Cap", "Ultrasonic Sealed"],
     desc: "Full range of OT caps — Bouffant, Surgeon Cap and Surgeon Hood. Ultrasonically sealed with tie or elastic options. Lightweight, breathable non-woven construction.",
     specs: { "Types": "Bouffant / Surgeon Hood / Surgeon Cap", "Sealing": "Ultrasonic", "Fastening": "Tie or Elastic" }
@@ -174,7 +174,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 110,
     unit: "pack of 100",
-    img: "https://images.unsplash.com/photo-1585435557343-3b092031a831?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2025/6/518325413/PI/EB/ON/2930693/shoe-cover-non-woven-500x500.jpg",
     tags: ["Shoe Cover", "Boot Cover", "Non-woven"],
     desc: "Disposable shoe and boot covers for OT and sterile zones. Anti-slip sole, elastic opening for easy donning. Latex-free non-woven construction.",
     specs: { "Material": "Non-woven PP", "Variants": "Shoe Cover / Boot Cover", "Latex": "Free" }
@@ -188,7 +188,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 550,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=80",
+    img: "https://5.imimg.com/data5/SELLER/Default/2024/3/396697816/TN/IN/VO/2930693/insolation-gowns-500x500.jpg",
     tags: ["Patient Gown", "Attender Gown", "Single-Use"],
     desc: "Single-use patient gowns and attender gowns for admission, critical care and procedure use. Also available as Critical Care Visitor Pack and Admission Kit.",
     specs: { "Variants": "Patient Gown / Attender Gown / Admission Kit / Visitor Pack", "Type": "Single-Use", "Material": "Non-woven" }
