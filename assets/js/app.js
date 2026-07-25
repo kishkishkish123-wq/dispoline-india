@@ -57,6 +57,13 @@ const Cart = {
 
 const money = (n) => "₹" + n.toLocaleString("en-IN");
 
+// Simple inline SVG placeholder shown if a product photo fails to load (e.g. network issue,
+// hotlink blocked, or the image URL breaks). Keeps the layout intact instead of showing
+// a broken-image icon or a blank box.
+const FALLBACK_IMG = "data:image/svg+xml;utf8," + encodeURIComponent(
+  `<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><rect width='100%' height='100%' fill='#e8ebee'/><text x='50%' y='50%' font-family='sans-serif' font-size='22' fill='#8a94a1' text-anchor='middle' dominant-baseline='middle'>Image unavailable</text></svg>`
+);
+
 /* ---------------------------- Toast ---------------------------- */
 function toast(msg, icon = "check_circle") {
   const el = document.getElementById("toast");
@@ -162,7 +169,7 @@ function productCard(p) {
   return `
   <div class="card product-card" data-reveal>
     <div class="product-media">
-      <img src="${p.img}" alt="${p.name}" loading="lazy">
+      <img src="${p.img}" alt="${p.name}" loading="lazy" onload="this.classList.add('loaded')" onerror="this.onerror=null;this.src='${FALLBACK_IMG}';this.classList.add('loaded','img-error')">
       <div style="position:absolute;top:10px;left:10px;" class="chip">${p.category}</div>
     </div>
     <div class="product-body">
@@ -240,11 +247,11 @@ function setCategory(cat, btn) {
 function cartLineHTML(line, dense) {
   return `
   <div class="cart-line" data-id="${line.product.id}">
-    <img src="${line.product.img}" alt="${line.product.name}">
+    <img src="${line.product.img}" alt="${line.product.name}" loading="lazy" onerror="this.onerror=null;this.src='${FALLBACK_IMG}'">
     <div class="cart-line-info">
       <div class="cart-line-top">
         <span style="font-size:13px;font-weight:700;color:var(--primary);">${line.product.name}</span>
-        <button onclick="Cart.remove('${line.product.id}')" style="background:none;border:none;color:var(--outline);" aria-label="Remove">
+        <button type="button" class="cart-remove-btn" onclick="Cart.remove('${line.product.id}')" aria-label="Remove ${line.product.name} from cart">
           <span class="material-symbols-outlined" style="font-size:18px;">close</span>
         </button>
       </div>
