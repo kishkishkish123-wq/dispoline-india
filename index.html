@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dispoline India — Precision Sterile Manufacturing</title>
+<meta name="description" content="ISO 13485 & CE certified manufacturer of sterile surgical disposables. Surgery kits, gowns, drapes & PPE — engineered for zero-defect performance.">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ============================= HEADER ============================= -->
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a href="#home" class="brand" onclick="navigate('home')">
+      <span class="mark">DI</span>
+      DISPOLINE <span style="font-weight:400;color:var(--secondary);">INDIA</span>
+    </a>
+
+    <nav class="nav-desktop">
+      <a class="nav-link" data-page="home" onclick="navigate('home')">Home</a>
+      <a class="nav-link" data-page="products" onclick="navigate('products')">Products</a>
+      <a class="nav-link" data-page="benefits" onclick="navigate('benefits')">Benefits</a>
+      <a class="nav-link" data-page="why-us" onclick="navigate('why-us')">Why Us</a>
+      <a class="nav-link" data-page="certificates" onclick="navigate('certificates')">Certificates</a>
+      <a class="nav-link" data-page="about" onclick="navigate('about')">About</a>
+      <a class="nav-link" data-page="contact" onclick="navigate('contact')">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" onclick="openCartDrawer()" aria-label="Open cart">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+      <button class="btn btn-primary btn-sm" style="display:none;" id="quote-btn-desktop" onclick="navigate('contact')">Request Quote</button>
+      <button class="icon-btn btn-menu" onclick="openMobileNav()" aria-label="Open menu">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobile-nav">
+  <div class="scrim" onclick="closeMobileNav()"></div>
+  <div class="panel">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <span class="brand" style="font-size:16px;"><span class="mark" style="width:28px;height:28px;font-size:11px;">DI</span>DISPOLINE</span>
+      <button class="icon-btn" onclick="closeMobileNav()" aria-label="Close menu"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <a onclick="navigate('home')">Home</a>
+    <a onclick="navigate('products')">Products</a>
+    <a onclick="navigate('benefits')">Benefits</a>
+    <a onclick="navigate('why-us')">Why Us</a>
+    <a onclick="navigate('certificates')">Certificates</a>
+    <a onclick="navigate('about')">About</a>
+    <a onclick="navigate('contact')">Contact</a>
+    <button class="btn btn-primary btn-block" style="margin-top:20px;" onclick="navigate('contact')">Request Quote</button>
+  </div>
+</div>
+
+<!-- Cart Drawer -->
+<div class="cart-drawer-wrap" id="cart-drawer-wrap">
+  <div class="scrim" onclick="closeCartDrawer()"></div>
+  <div class="cart-drawer">
+    <div class="cart-drawer-head">
+      <h3 style="font-size:16px;font-weight:700;margin:0;color:var(--primary);">Your Cart</h3>
+      <button class="icon-btn" onclick="closeCartDrawer()" aria-label="Close cart"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <div class="cart-drawer-body" id="cart-drawer-body"></div>
+    <div class="cart-drawer-foot">
+      <div style="display:flex;justify-content:space-between;margin-bottom:14px;font-size:14px;">
+        <span style="color:var(--secondary);">Subtotal</span>
+        <span class="font-geist" style="font-weight:700;font-size:17px;" id="drawer-subtotal">₹0</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="drawer-checkout-btn" onclick="navigate('checkout')" disabled>
+        Checkout <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+      </button>
+      <button class="btn btn-secondary btn-block" style="margin-top:10px;" onclick="navigate('cart')">View Full Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<main>
+<!-- ============================= HOME ============================= -->
+<section id="page-home" class="page-fade">
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow"><span class="dot"></span><span class="label" style="color:var(--primary);">ISO 13485:2016 &amp; CE Certified</span></span>
+        <h1 class="h1">Precision engineered<br>for <span class="accent">zero-defect</span><br>sterile manufacturing.</h1>
+        <p class="lede">Dispoline India designs and manufactures surgical disposables — kits, gowns, drapes and PPE — in Class 100,000 cleanrooms, built for hospitals that cannot afford to compromise.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="navigate('products')">Browse Product Catalog <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></button>
+          <button class="btn btn-secondary" onclick="navigate('certificates')">View Certifications</button>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b><span data-counter="12" data-suffix="+">0+</span></b><span>Years Manufacturing</span></div>
+          <div class="hero-stat"><b><span data-counter="40" data-suffix="M+">0M+</span></b><span>Units Shipped / Year</span></div>
+          <div class="hero-stat"><b><span data-counter="99.4" data-suffix="%">0%</span></b><span>Batch Pass Rate</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYllG1n3TWyFh_Kh1kx_2dUcHivDIH0uvxkHOXGDHu8EIHx59jCsEhPhUXZduchyPV3nI7uYuqqGW3KCmoOAGyOwwEOKqFLKwmZmsOj4999Qx93hApeN5Fhi1GodRXpENOOd6XaIKMKMo4tfmqX6QGeaDSY_DiVRGIicwcAMQd4Un-IKwAen_6yo-YKHIQ8znB82-8zmtBFBMiLEAK0Lfb3o9SwUNq_846gTIwivpK2Is69FYgxiqiHduBvFZWzJc5MFQlDJh03w" alt="Sterile surgical kit on stainless steel tray">
+          <div class="hero-tag t1"><span class="material-symbols-outlined" style="color:var(--accent);">verified</span><div><b>ISO 13485</b><span style="display:block;">Compliant</span></div></div>
+          <div class="hero-tag t2"><span class="material-symbols-outlined" style="color:var(--accent);">science</span><div><b>Class 100,000</b><span style="display:block;">Cleanroom</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>ISO 13485:2016</span><span>CE MARKED</span><span>WHO-GMP APPROVED</span><span>AAMI LEVEL 3/4</span><span>EO &amp; GAMMA STERILIZED</span><span>ISO 7 CLEANROOM</span>
+      <span>ISO 13485:2016</span><span>CE MARKED</span><span>WHO-GMP APPROVED</span><span>AAMI LEVEL 3/4</span><span>EO &amp; GAMMA STERILIZED</span><span>ISO 7 CLEANROOM</span>
+    </div>
+  </div>
+
+  <!-- Category Showcase -->
+  <section class="section wrap">
+    <div data-reveal style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px;margin-bottom:40px;">
+      <div>
+        <span class="label">Core Categories</span>
+        <h2 style="font-size:clamp(24px,3vw,34px);font-weight:800;color:var(--primary);margin:8px 0 0;letter-spacing:-.01em;">Engineered Product Lines</h2>
+      </div>
+      <button class="btn btn-secondary" onclick="navigate('products')">Full Catalog <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></button>
+    </div>
+    <div class="grid-auto" data-reveal-stagger>
+      <div class="card" style="padding:28px;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--accent);">medical_services</span>
+        <h3 style="margin:16px 0 8px;font-size:17px;color:var(--primary);">Surgery Kits</h3>
+        <p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Specialised procedure packs for orthopedic &amp; general surgery.</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--accent);">dry_cleaning</span>
+        <h3 style="margin:16px 0 8px;font-size:17px;color:var(--primary);">Surgical Gowns</h3>
+        <p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">AAMI Level 3/4 high-barrier protection with sealed seams.</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--accent);">layers</span>
+        <h3 style="margin:16px 0 8px;font-size:17px;color:var(--primary);">Sterile Drapes</h3>
+        <p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Fenestrated, fluid-managing drapes for every specialty.</p>
+      </div>
+      <div class="card" style="padding:28px;">
+        <span class="material-symbols-outlined" style="font-size:32px;color:var(--accent);">masks</span>
+        <h3 style="margin:16px 0 8px;font-size:17px;color:var(--primary);">PPE</h3>
+        <p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Masks, gloves &amp; caps engineered to international barrier standards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Section -->
+  <section class="section" style="background:var(--surface-container-lowest);border-top:1px solid var(--outline-variant);border-bottom:1px solid var(--outline-variant);">
+    <div class="wrap" style="display:grid;gap:var(--gutter);grid-template-columns:1fr;">
+      <div style="display:grid;gap:var(--gutter);" class="grid-2col">
+        <div data-reveal>
+          <span class="label">Compliance Framework</span>
+          <h2 style="font-size:clamp(22px,3vw,30px);font-weight:800;color:var(--primary);margin:10px 0 16px;">Uncompromising Quality Assurance</h2>
+          <p style="color:var(--secondary);line-height:1.7;margin-bottom:28px;max-width:46ch;">Every component leaving our facility undergoes rigorous multi-stage validation, supported by international regulatory compliance and a zero-tolerance defect policy.</p>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div class="card" style="display:flex;gap:16px;padding:18px;">
+              <span class="material-symbols-outlined" style="color:var(--accent);">check_circle</span>
+              <div><b style="font-size:13px;color:var(--primary);">Batch Traceability</b><p style="margin:4px 0 0;font-size:12.5px;color:var(--secondary);">End-to-end QR/barcode tracking, raw material to dispatch.</p></div>
+            </div>
+            <div class="card" style="display:flex;gap:16px;padding:18px;">
+              <span class="material-symbols-outlined" style="color:var(--accent);">science</span>
+              <div><b style="font-size:13px;color:var(--primary);">Cleanroom Assembly</b><p style="margin:4px 0 0;font-size:12.5px;color:var(--secondary);">Class 10,000 / ISO 7 certified environmental controls.</p></div>
+            </div>
+          </div>
+        </div>
+        <div data-reveal-stagger style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-content:center;">
+          <div class="card" style="text-align:center;padding:26px 14px;">
+            <span class="material-symbols-outlined" style="font-size:36px;color:var(--accent);">workspace_premium</span>
+            <div class="label" style="margin-top:12px;color:var(--primary);">ISO 13485</div>
+          </div>
+          <div class="card" style="text-align:center;padding:26px 14px;">
+            <span class="material-symbols-outlined" style="font-size:36px;color:var(--accent);">verified</span>
+            <div class="label" style="margin-top:12px;color:var(--primary);">CE MARK</div>
+          </div>
+          <div class="card" style="text-align:center;padding:26px 14px;">
+            <span class="material-symbols-outlined" style="font-size:36px;color:var(--accent);">public</span>
+            <div class="label" style="margin-top:12px;color:var(--primary);">WHO-GMP</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background:var(--primary);color:#fff;position:relative;overflow:hidden;">
+    <div style="position:absolute;inset:0;opacity:.08;background-image:repeating-linear-gradient(0deg,#fff 0,#fff 1px,transparent 1px,transparent 40px),repeating-linear-gradient(90deg,#fff 0,#fff 1px,transparent 1px,transparent 40px);"></div>
+    <div class="wrap" style="position:relative;text-align:center;max-width:640px;" data-reveal>
+      <span class="material-symbols-outlined" style="font-size:44px;color:var(--accent);">handshake</span>
+      <h2 style="font-size:clamp(24px,4vw,34px);font-weight:800;margin:18px 0;">Partner with a Certified Manufacturer</h2>
+      <p style="color:#c9ccd1;margin-bottom:30px;">Secure your supply chain with industrial-grade medical manufacturing. Order online or talk to our technical sales team.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <button class="btn" style="background:#fff;color:var(--primary);" onclick="navigate('products')">Shop Products</button>
+        <button class="btn" style="border:1px solid #fff;color:#fff;" onclick="navigate('contact')">Initiate Partnership</button>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= PRODUCTS ============================= -->
+<section id="page-products" class="page-fade hidden">
+  <section class="section-tight wrap">
+    <div data-reveal style="margin-bottom:8px;">
+      <div class="label" style="margin-bottom:8px;">Products Catalog <span class="material-symbols-outlined" style="font-size:13px;vertical-align:-2px;">chevron_right</span> <span style="color:var(--primary);">Core Categories</span></div>
+      <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);letter-spacing:-.01em;margin:0 0 10px;">CORE PRODUCT CATALOG</h1>
+      <p style="color:var(--secondary);max-width:60ch;font-size:16px;line-height:1.6;">Engineered for zero-defect performance. Add items to your cart and check out securely — bulk procurement pricing available on request.</p>
+    </div>
+    <div class="filter-tabs" style="margin:28px 0;" data-reveal>
+      <button class="filter-tab active" onclick="setCategory('All', this)">All Products</button>
+      <button class="filter-tab" onclick="setCategory('Surgery Kits', this)">Surgery Kits</button>
+      <button class="filter-tab" onclick="setCategory('Gowns', this)">Gowns</button>
+      <button class="filter-tab" onclick="setCategory('Drapes', this)">Drapes</button>
+      <button class="filter-tab" onclick="setCategory('PPE', this)">PPE</button>
+    </div>
+    <div class="grid-auto" id="products-grid"></div>
+  </section>
+</section>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="page-about" class="page-fade hidden">
+  <section class="section-tight wrap" data-reveal>
+    <span class="label">Corporate Profile</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">About Dispoline India</h1>
+    <p style="color:var(--secondary);max-width:70ch;font-size:16px;line-height:1.7;">For over a decade, Dispoline India has manufactured sterile, single-use medical disposables from our ISO 13485-certified facility. We serve tertiary hospitals, ambulatory surgery centers and government health missions across India and 20+ export markets, engineering every product to a zero-defect standard.</p>
+  </section>
+  <section class="wrap" style="padding-bottom:80px;">
+    <div class="grid-auto" data-reveal-stagger>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="12" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Years of Operation</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="450" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Employees</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="20" data-suffix="+">0</span></b><span class="label" style="margin-top:6px;display:block;">Export Markets</span></div>
+      <div class="stat-block card" style="padding:28px;"><b><span data-counter="99.4" data-suffix="%">0</span></b><span class="label" style="margin-top:6px;display:block;">Batch Pass Rate</span></div>
+    </div>
+  </section>
+  <section class="section" style="background:var(--surface-container-lowest);border-top:1px solid var(--outline-variant);">
+    <div class="wrap" style="display:grid;gap:40px;" >
+      <div data-reveal>
+        <span class="label">Our Mission</span>
+        <h2 style="font-size:24px;font-weight:800;color:var(--primary);margin:10px 0 14px;">Form follows function — always.</h2>
+        <p style="color:var(--secondary);line-height:1.7;max-width:70ch;">We design for the operating theatre first: sequential unpacking, fail-safe sterility indicators, and materials chosen for clinical performance, not cosmetics. Every facility decision — from cleanroom class to batch traceability — is made to protect the patient outcome at the end of the supply chain.</p>
+      </div>
+      <div class="step" data-reveal>
+        <div class="num">01</div>
+        <h4 style="color:var(--primary);margin:0 0 6px;font-size:15px;">Raw Material Sourcing</h4>
+        <p style="color:var(--secondary);font-size:13.5px;margin:0;">Certified medical-grade polymers and surgical steel from audited global suppliers.</p>
+      </div>
+      <div class="step" data-reveal>
+        <div class="num">02</div>
+        <h4 style="color:var(--primary);margin:0 0 6px;font-size:15px;">Cleanroom Assembly</h4>
+        <p style="color:var(--secondary);font-size:13.5px;margin:0;">Class 100,000 / ISO 7 environments with continuous particulate monitoring.</p>
+      </div>
+      <div class="step" data-reveal>
+        <div class="num">03</div>
+        <h4 style="color:var(--primary);margin:0 0 6px;font-size:15px;">Sterilization &amp; QA</h4>
+        <p style="color:var(--secondary);font-size:13.5px;margin:0;">EO / Gamma sterilization with batch-level validation before release.</p>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= BENEFITS ============================= -->
+<section id="page-benefits" class="page-fade hidden">
+  <section class="section-tight wrap" data-reveal>
+    <span class="label">Why It Matters</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">Benefits Built Into Every Batch</h1>
+    <p style="color:var(--secondary);max-width:65ch;font-size:16px;line-height:1.7;">Beyond compliance, our engineering choices translate directly into safer procedures, faster turnover and lower total cost of ownership for your facility.</p>
+  </section>
+  <section class="wrap" style="padding-bottom:100px;">
+    <div class="grid-auto" data-reveal-stagger>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">shield</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Reduced Infection Risk</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">High-barrier materials and validated sterilization cut surgical site infection exposure.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">bolt</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Faster Theatre Turnover</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Sequential-unpack kits reduce setup time between procedures by up to 30%.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">savings</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Lower Total Cost</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Bundled kits reduce wastage and inventory overhead versus loose-item procurement.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">qr_code_scanner</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Full Traceability</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Every unit is barcode-tracked from raw material lot to hospital dispatch.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">eco</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Latex-Free Options</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Full latex-free product lines available across gowns, drapes and gloves.</p></div>
+      <div class="card" style="padding:28px;"><span class="material-symbols-outlined" style="font-size:30px;color:var(--accent);">support_agent</span><h3 style="margin:16px 0 8px;font-size:16px;color:var(--primary);">Dedicated Support</h3><p style="font-size:13.5px;color:var(--secondary);line-height:1.6;">Technical account managers for bulk procurement and custom kit configuration.</p></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= WHY US ============================= -->
+<section id="page-why-us" class="page-fade hidden">
+  <section class="section-tight wrap" data-reveal>
+    <span class="label">Comparative Advantage</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">Why Hospitals Choose Dispoline</h1>
+  </section>
+  <section class="wrap" style="padding-bottom:100px;overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;min-width:640px;" data-reveal>
+      <thead>
+        <tr style="border-bottom:2px solid var(--primary);">
+          <th style="text-align:left;padding:14px 12px;font-size:12px;color:var(--secondary);text-transform:uppercase;letter-spacing:.05em;">Capability</th>
+          <th style="text-align:center;padding:14px 12px;font-size:12px;color:var(--primary);text-transform:uppercase;letter-spacing:.05em;">Dispoline India</th>
+          <th style="text-align:center;padding:14px 12px;font-size:12px;color:var(--secondary);text-transform:uppercase;letter-spacing:.05em;">Typical Supplier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">ISO 13485:2016 Certified</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Class 100,000 Cleanroom</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Batch-Level Traceability</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Custom Kit Configuration</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
+        <tr class="hairline"><td style="padding:16px 12px;font-size:14px;">Pan-India Cold Chain Logistics</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--outline);">remove</span></td></tr>
+        <tr><td style="padding:16px 12px;font-size:14px;">Dedicated Technical Account Manager</td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--success);">check_circle</span></td><td style="text-align:center;"><span class="material-symbols-outlined" style="color:var(--error);">close</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+</section>
+
+<!-- ============================= CERTIFICATES ============================= -->
+<section id="page-certificates" class="page-fade hidden">
+  <section class="section-tight wrap" data-reveal>
+    <span class="label">Regulatory Standing</span>
+    <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">Certificates &amp; Compliance</h1>
+    <p style="color:var(--secondary);max-width:60ch;font-size:16px;line-height:1.7;">Our management systems and products are independently audited and certified to the following international standards.</p>
+  </section>
+  <section class="wrap" style="padding-bottom:100px;">
+    <div class="grid-auto" data-reveal-stagger>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">workspace_premium</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 13485:2016</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Medical Devices — Quality Management Systems</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">verified</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">CE Marking</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">European Conformity — Class I/IIa Devices</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">public</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">WHO-GMP</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Good Manufacturing Practice Certification</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">gpp_good</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">CDSCO Registered</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Central Drugs Standard Control Organisation</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">science</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 7 Cleanroom</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Controlled Environment Assembly Certification</p>
+      </div>
+      <div class="card" style="padding:28px;text-align:center;">
+        <span class="material-symbols-outlined" style="font-size:40px;color:var(--accent);">eco</span>
+        <h3 style="margin:16px 0 6px;font-size:16px;color:var(--primary);">ISO 14001</h3>
+        <p class="label" style="text-transform:none;letter-spacing:0;font-weight:500;">Environmental Management Systems</p>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section id="page-contact" class="page-fade hidden">
+  <section class="section-tight wrap">
+    <div data-reveal style="margin-bottom:40px;">
+      <span class="label">Get In Touch</span>
+      <h1 style="font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--primary);margin:10px 0 16px;">Contact Our Technical Sales Team</h1>
+      <p style="color:var(--secondary);max-width:60ch;font-size:16px;line-height:1.7;">For bulk procurement, custom kit configuration or technical data sheets, reach out and our team will respond within one business day.</p>
+    </div>
+    <div style="display:grid;gap:40px;grid-template-columns:1fr;" class="grid-2col-r">
+      <form data-reveal onsubmit="handleContactForm(event)" style="display:flex;flex-direction:column;gap:18px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="field"><label>Full Name</label><input required placeholder="Your name"></div>
+          <div class="field"><label>Organisation</label><input required placeholder="Hospital / Distributor"></div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div class="field"><label>Email</label><input required type="email" placeholder="you@hospital.com"></div>
+          <div class="field"><label>Phone</label><input required placeholder="98xxxxxxxx"></div>
+        </div>
+        <div class="field"><label>Requirement</label><textarea rows="4" placeholder="Tell us what you need (products, quantities, timelines)"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="align-self:start;">Send Enquiry <span class="material-symbols-outlined" style="font-size:16px;">send</span></button>
+      </form>
+      <div data-reveal style="display:flex;flex-direction:column;gap:16px;">
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">location_on</span><div><b style="font-size:13px;color:var(--primary);">Manufacturing Facility</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">MIDC Industrial Area, Pune, Maharashtra, India 411019</p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">call</span><div><b style="font-size:13px;color:var(--primary);">Sales Hotline</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">+91 20 6789 4500</p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">mail</span><div><b style="font-size:13px;color:var(--primary);">Email</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">sales@dispolineindia.com</p></div></div>
+        <div class="card" style="padding:22px;display:flex;gap:16px;"><span class="material-symbols-outlined" style="color:var(--accent);">schedule</span><div><b style="font-size:13px;color:var(--primary);">Business Hours</b><p style="margin:4px 0 0;font-size:13px;color:var(--secondary);">Mon – Sat, 9:00 AM – 6:30 PM IST</p></div></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= CART ============================= -->
+<section id="page-cart" class="page-fade hidden">
+  <section class="section-tight wrap">
+    <div data-reveal style="margin-bottom:30px;">
+      <span class="label">Step 01 of 02</span>
+      <h1 style="font-size:clamp(26px,4vw,36px);font-weight:800;color:var(--primary);margin:10px 0 0;">Your Cart</h1>
+    </div>
+    <div style="display:grid;gap:40px;grid-template-columns:1fr;" class="grid-cart">
+      <div id="cart-page-body"></div>
+      <div id="cart-summary-wrap">
+        <div class="card" style="padding:26px;position:sticky;top:100px;">
+          <h3 style="font-size:15px;font-weight:700;color:var(--primary);margin-bottom:16px;">Order Summary</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:13.5px;">
+            <div style="display:flex;justify-content:space-between;"><span>Subtotal</span><span id="sum-subtotal">₹0</span></div>
+            <div style="display:flex;justify-content:space-between;"><span>GST (18%)</span><span id="sum-gst">₹0</span></div>
+            <div style="display:flex;justify-content:space-between;"><span>Shipping</span><span id="sum-shipping">₹0</span></div>
+          </div>
+          <div class="divider" style="margin:16px 0;"></div>
+          <div style="display:flex;justify-content:space-between;font-size:19px;font-weight:800;color:var(--primary);margin-bottom:20px;">
+            <span>Total</span><span class="font-geist" id="sum-total">₹0</span>
+          </div>
+          <button class="btn btn-primary btn-block" onclick="navigate('checkout')">Proceed to Checkout <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span></button>
+          <button class="btn btn-secondary btn-block" style="margin-top:10px;" onclick="navigate('products')">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= CHECKOUT ============================= -->
+<section id="page-checkout" class="page-fade hidden">
+  <section class="section-tight wrap">
+    <div data-reveal style="margin-bottom:30px;">
+      <span class="label">Step 02 of 02</span>
+      <h1 style="font-size:clamp(26px,4vw,36px);font-weight:800;color:var(--primary);margin:10px 0 0;">Secure Checkout</h1>
+    </div>
+    <div style="display:grid;gap:40px;grid-template-columns:1fr;" class="grid-cart">
+      <div id="checkout-body"></div>
+      <div><div class="card" id="checkout-order-summary" style="padding:26px;position:sticky;top:100px;"></div></div>
+    </div>
+  </section>
+</section>
+
+<!-- ============================= ORDER SUCCESS ============================= -->
+<section id="page-order-success" class="page-fade hidden">
+  <section class="section wrap" id="order-success-body"></section>
+</section>
+
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="site-footer">
+  <div class="wrap" style="display:grid;gap:var(--gutter);grid-template-columns:1fr;padding:64px 0 40px;" >
+    <div class="footer-grid">
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <span class="footer-brand">DISPOLINE INDIA</span>
+        <p style="font-size:13px;color:#9aa0a8;max-width:34ch;line-height:1.6;">ISO 13485:2016 &amp; CE certified manufacturer of sterile surgical disposables.</p>
+        <div style="display:flex;gap:10px;margin-top:6px;">
+          <a href="#" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">public</span></a>
+          <a href="#" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">mail</span></a>
+          <a href="#" class="icon-btn" style="background:transparent;border-color:#333;color:#fff;"><span class="material-symbols-outlined" style="font-size:16px;">call</span></a>
+        </div>
+      </div>
+      <div>
+        <span class="label" style="color:#9aa0a8;">Company</span>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;font-size:13.5px;">
+          <a onclick="navigate('about')">About Us</a>
+          <a onclick="navigate('why-us')">Why Us</a>
+          <a onclick="navigate('certificates')">Certificates</a>
+          <a onclick="navigate('contact')">Contact</a>
+        </div>
+      </div>
+      <div>
+        <span class="label" style="color:#9aa0a8;">Shop</span>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;font-size:13.5px;">
+          <a onclick="navigate('products')">Product Catalog</a>
+          <a onclick="navigate('cart')">Cart</a>
+          <a onclick="navigate('benefits')">Benefits</a>
+        </div>
+      </div>
+      <div>
+        <span class="label" style="color:#9aa0a8;">Legal</span>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;font-size:13.5px;">
+          <a href="#">Material Safety Data Sheets</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Sale</a>
+        </div>
+      </div>
+    </div>
+    <div class="divider" style="background:#2a2d33;margin-top:20px;"></div>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;color:#7a7f87;padding-top:20px;">
+      <span>© 2026 Dispoline India. All rights reserved.</span>
+      <span>ISO 13485:2016 &amp; CE Certified Medical Manufacturer</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  @media(min-width:860px){
+    .grid-2col{grid-template-columns:1fr 1fr;align-items:center;}
+    .grid-2col-r{grid-template-columns:1.3fr 1fr;}
+    .grid-cart{grid-template-columns:1fr 380px;align-items:start;}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;}
+  }
+  .footer-grid{display:grid;grid-template-columns:1fr;gap:32px;}
+</style>
+
+<script src="assets/js/products-data.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+  function handleContactForm(e){
+    e.preventDefault();
+    toast("Enquiry sent — our team will respond within 1 business day.", "mark_email_read");
+    e.target.reset();
+  }
+</script>
+</body>
+</html>
