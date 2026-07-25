@@ -10,7 +10,7 @@ const PRODUCTS = [
     subcategory: "Cardiology",
     price: 2800,
     unit: "per kit",
-    img: "https://images.unsplash.com/photo-1631563019676-dade0dbdb8e4?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1514416309827-bfb0cf433a2d?w=600&q=80",
     tags: ["Cardiology", "Custom Pack", "EO Sterile"],
     desc: "Customised surgery-specific pre-sterile procedure kit for Coronary Artery Bypass Grafting. Assembled in a controlled environment with all traceability protocols applied.",
     specs: { "Sterilization": "ETO Validated", "Shelf Life": "As per pack", "Type": "Single-Use" }
@@ -22,7 +22,7 @@ const PRODUCTS = [
     subcategory: "Cardiology",
     price: 1200,
     unit: "per kit",
-    img: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1727830968495-ea2798aaee35?w=600&q=80",
     tags: ["Cardiology", "Sterile Pack"],
     desc: "Pre-sterile procedure kit for angiogram procedures, with usage-based sealing and sequential unpacking design for maximum theatre efficiency.",
     specs: { "Sterilization": "ETO Validated", "Shelf Life": "As per pack", "Type": "Single-Use" }
@@ -34,7 +34,7 @@ const PRODUCTS = [
     subcategory: "Gynaecology",
     price: 950,
     unit: "per kit",
-    img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1758204054779-72eb0cdfd732?w=600&q=80",
     tags: ["Gynaecology", "Sterile Pack"],
     desc: "Customised pre-sterile kit for Lower Segment Caesarean Section. Includes all required drapes, gowns and accessories in a single validated sterile barrier package.",
     specs: { "Sterilization": "ETO Validated", "Shelf Life": "As per pack", "Type": "Single-Use" }
@@ -46,7 +46,7 @@ const PRODUCTS = [
     subcategory: "Orthopaedics",
     price: 1600,
     unit: "per kit",
-    img: "https://images.unsplash.com/photo-1551076805-e1869033e561?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1770836037220-8848299e6b42?w=600&q=80",
     tags: ["Orthopaedics", "Custom Pack"],
     desc: "Procedure-specific kit covering THR, TKR, Spinal Surgery and Arthroscopy. Drapes, gowns and covers configured to surgical team specification.",
     specs: { "Sterilization": "ETO Validated", "Shelf Life": "As per pack", "Variants": "THR / TKR / Spinal / Arthroscopy" }
@@ -58,7 +58,7 @@ const PRODUCTS = [
     subcategory: "ENT",
     price: 850,
     unit: "per kit",
-    img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1668453598237-27098d2575ac?w=600&q=80",
     tags: ["ENT", "Sterile Pack"],
     desc: "Surgery-specific pack for ENT procedures and ICU utility. Includes all required single-use components with validated sterile barrier sealing.",
     specs: { "Sterilization": "ETO Validated", "Type": "Single-Use", "Also Available": "ICU Utility Kit" }
@@ -70,7 +70,7 @@ const PRODUCTS = [
     subcategory: "General Surgery",
     price: 750,
     unit: "per pack",
-    img: "https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1727830968636-3a1b507bd601?w=600&q=80",
     tags: ["General Surgery", "Laparoscopy", "HBSAG/HIV"],
     desc: "Complete single-use procedure pack for general surgery including Laparoscopy, Perineal and HBSAG/HIV packs. Sequential unpacking layout for maximum contamination control.",
     specs: { "Sterilization": "ETO Validated", "Variants": "General / Laproscopy / Perineal / HBSAG-HIV", "Type": "Single-Use" }
@@ -202,7 +202,7 @@ const PRODUCTS = [
     subcategory: "",
     price: 450,
     unit: "per kit",
-    img: "https://images.unsplash.com/photo-1631563019676-dade0dbdb8e4?w=600&q=80",
+    img: "https://images.unsplash.com/photo-1560269941-141b145a1b57?w=600&q=80",
     tags: ["Small Procedure", "Pre-Sterile", "Ready to Use"],
     desc: "ProceSuRe is Dispoline's range of pre-sterile small procedure kits designed for minor surgical and clinical procedures. Ready-to-use, validated sterile barrier packaging.",
     specs: { "Sterilization": "ETO Validated", "Packaging": "EN ISO 11607-2 Sealed", "Type": "Single-Use" }
